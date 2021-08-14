@@ -1929,6 +1929,14 @@ input, select, textarea {
 						background: #4c6aa8;
 					}
 
+					ul.social li a.fa-facebook-f {
+						background: #3c5a98;
+					}
+	
+						ul.social li a.fa-facebook-f:hover {
+							background: #4c6aa8;
+						}
+
 				ul.social li a.fa-twitter {
 					background: #2daae4;
 				}
@@ -1953,6 +1961,14 @@ input, select, textarea {
 						background: #1075a9;
 					}
 
+					ul.social li a.fa-linkedin-in {
+						background: #006599;
+					}
+	
+						ul.social li a.fa-linkedin-in:hover {
+							background: #1075a9;
+						}					
+
 				ul.social li a.fa-tumblr {
 					background: #2b4661;
 				}
@@ -1969,6 +1985,21 @@ input, select, textarea {
 						background: #1e81b0;
 					}
 
+					ul.social li a.fa-instagram {
+						background: #e1306c;
+					}
+	
+						ul.social li a.fa-instagram:hover {
+							background: #e1306c;
+						}
+
+						ul.social li a.fa-github {
+							background: #333;
+						}
+		
+							ul.social li a.fa-github:hover {
+								background: #333;
+							}
 /* Icons */
 
 	.icon {
@@ -2062,7 +2093,7 @@ input, select, textarea {
 		position: relative;
 		background: #154c79;
 		border-bottom: solid 0px #154c79; /*Viiva*/
-		padding: 2em 0 2em 0; /* Sivuston ylälaidan marginaalit*/
+		padding: 2em 0 2em 0; /*Sivuston ylälaidon marginaalit*/
 		text-align: center;
 	}
 
