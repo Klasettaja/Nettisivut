@@ -2175,7 +2175,8 @@ input, select, textarea {
 		}
 
 			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #fff;
+				color: #000000;
+				font-weight: 700;
 			}
 
 		.dropotron.level-0 {
