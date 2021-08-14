@@ -2061,8 +2061,8 @@ input, select, textarea {
 	#header {
 		position: relative;
 		background: #154c79;
-		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		border-bottom: solid 0px #154c79; /*Viiva*/
+		padding: 0;
 		text-align: center;
 	}
 
@@ -2234,7 +2234,7 @@ input, select, textarea {
 				top: 0;
 				display: block;
 				z-index: -1;
-				box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+				box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 #fff;
 			}
 
 			#intro .middle:after {
@@ -2246,7 +2246,7 @@ input, select, textarea {
 				top: 0;
 				display: block;
 				z-index: -1;
-				box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+				box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 #fff;
 			}
 
 		#intro .button {
