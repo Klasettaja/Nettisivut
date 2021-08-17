@@ -95,7 +95,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #5d5d5d;
+		color: #5d5d5d; /* Bannerin tekstikappaleen väri*/
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
@@ -2210,11 +2210,11 @@ input, select, textarea {
 		background-position: left left;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
-		text-align: justify;
-		text-align-last:center;
+		text-align: center;
 		position: relative;
 		padding: 8em 0;
 		margin: 4em 0 0 0;
+		
 	}
 
 		#banner header {
