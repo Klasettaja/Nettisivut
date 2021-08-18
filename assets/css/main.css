@@ -2910,8 +2910,9 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 8em 0 8em 47%;
+				padding: 8em 0 8em 50%;
 				margin: 2em 0 0 0;
+				font-size: 0.7em;
 				
 			}
 
