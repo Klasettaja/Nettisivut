@@ -5,6 +5,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		    <!-- Google Analytics seurantatagi -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5G20TMYQK"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+		
+			gtag('config', 'G-Y5G20TMYQK');
+			</script>
+
+		<link rel="shortcut icon" type="image/png" href="images/K.PNG"/>
+		
 	</head>
 	<body class="2021-08-15-Nettisivujen-teko is-preload">
 		<div id="page-wrapper">
@@ -57,17 +70,38 @@
 								<a href="#" class="image featured"><img src="images/2021-08-15 Nettisivujen teko/Koodit 1200 x 444.jpg" alt="" /></a>
 								<header>
 									<h2>Nettisivujen luonti</h2>
-									<p>Blogipostaus on työn alla</p>
+									<p>Julkaistu 19.08.2021</p>
 								</header>
 								<p>
 									Tervetuloa blogiini! Tämä on ensimmäinen blogipostaukseni ja aloitan sen kertomalla, kuinka olen luonut nämä nettisivut 
-									hyödyntämällä Github-sivuja, Visual Studio Codea ja Githubia.
+									hyödyntämällä Github-sivuja, Visual Studio Codea ja Githubia. Tämän blogipostauksen ohjeiden avulla myös sinä opit tekemään kustannustehokkaat staattiset nettisivut. 
+									Käytännössä Github Pages -palvelu julkaisee sivusi username.github.io sivustolle, josta sisältö ohjataan varaamallesi verkkosivulle. 
+									Github Pages- ja DNS-ohjauksien kanssa kannattaa olla kärsivällinen, sillä ensimmäisten tuntien aikana ohjausmuutoksista sivuston toiminta on epävakaata. Kannattaa siis odottaa ainakin vuorokausi ennen kuin epäilee, että on tehnyt jotain väärin. Mainittakoon kuitenkin vielä hyvänä puolena, että Github Pages -tarjoaa sivustollesi SSL-suojauksen (https), jonka avulla sivusto näyttää turvallisena vierailijoille.
+								</p>
+								<h3>Toimenpiteet</h3>
+								<p>
+									Aivan ensiksi sinun tulee varata verkkotunnus käyttöösi joltain palveluntarjoajalta, kuten esimerkiksi domainhotellista sekä hankkia mahdolliset lisäpalvelut, joilla voit muuttaa DNS-nimipalveluasetuksia. Staattisten nettisivujen ylläpito tapahtuu Github Pages -palvelun avulla, jonka <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">IP-osoitteet</a> sinun tulee lisätä DNS-asetuksiisi.
 								</p>
 								<p>
-									Blogipostaukseen tulee lisää tekstiä, kun olen saanut sivuston kokonaisuudessaan luotua.
+									Nettisivujen kehittämistä varten sinun on hyvä ladata myös ohjelmistokehityspaketin sisältävä tekstieditori, kuten <a href="https://code.visualstudio.com/download">Visual Studio Code</a>. Visual Studio Code (VSC) on Microsoftin tarjoama ilmainen Git-versionhallintaa tukeva ohjelmointityökalu. 
+									Mikäli Git ei tule VSC-latauspaketin, tulee Git ladata erikseen <a href="https://git-scm.com/downloads">Gitin</a> nettisivuilta. Kun olet ladannut ohjelmistot, niin asenna VSC-sovellukseen vielä lisäosina (extensions) Git Extension Pack, gitignore sekä Live Server. Git-lisäosat auttavat jatkossa versiohallinan kanssa ja Live Serverin avulla nettisivujen kehitys on puolestaan nopeampaa.
+								</p>
+								<p>Ohjelmistojen latautuessa voit perustaa Github-tilin osoitteessa <a href="https://github.com/">https://github.com/</a>. Github-tilille voit täydentää haluamasi osoitetiedot, mutta oleellisinta on perustaa uusi repository nettisivujen kehittämistä varten. Nettisivuja kehitettäessä nettisivujen lähdekoodit sekä niihin liittyvät aineistot julkaistaan repositoryyn, jossa voidaan hallinnoida sivujen versiohallintaa.
+								Lisäksi staattisten nettisivujen ylläpidossa hyödynnettävä Github Pages -palvelu edellyttää, että sivuston lähdekoodit on julkaistu Githubiin, jotta nettisivut toimivat.</p>
+								<p>
+									Kun olet tehnyt kaikki edellä mainitut perustoimet, niin voit julkaista ensimmäisen versiosi index.html-tiedostostasi luomaasi Github-repositoryyn. Sinun tulee ensin avata uusi projektikansio Visual Studio Codessa ja tämän jälkeen vielä määritellä, että projektikansio kuuluu Git-versionhallinnan piiriin. Lopuksi voit suorittaa push-komennon eli työntää koodin Github-repositoryyn ja silmäillä tuloksia juuri luomillasi nettisivuilla.
+								</p>
+								<h3>Vinkkejä</h3>
+									<ul>
+										<li>HTML-merkintäkielen opiskelu onnistuu helpoiten sivustolla <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</li>
+										<li>Nettisivujen luonti kannattaa aloittaa luomalla sivusto jo jotakin valmista ilmaista sivupohjaa hyödyntämällä, mikäli haluaa saada nettisivut pystyyn nopeasti.</li>
+										<li>Nettisivujen kävijämäärien seuranta onnistuu kätevästi Google Analytics työkalulla, kun sivustolle on ensin tiputettu Google-seurantatunnus.</li>
+									  </ul>
+								<h3>Ylläpitokustannukset</h3>
+								<p>
+									Tämän sivuston ylläpitokustannukset muodostuvat domainhotellin kautta varatusta verkkotunnuksesta sekä DNS-nimipalvelut sisältävästä yhden tähden webhotellista. Sivuston ylläpitokustannukset ovat nämä elementit huomioiden noin 15 € vuodessa.
 								</p>
 							</article>
-
 					</div>
 				</section>
 
