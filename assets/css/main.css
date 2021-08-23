@@ -2000,7 +2000,7 @@ input, select, textarea {
 					}
 	
 						ul.social li a.fa-instagram:hover {
-							background: #e1306c;
+							background: #ff7ca8;
 						}
 
 						ul.social li a.fa-github {
@@ -2008,14 +2008,14 @@ input, select, textarea {
 						}
 		
 							ul.social li a.fa-github:hover {
-								background: #333;
+								background: rgb(110, 99, 99);
 							}
 							ul.social li a.fa-youtube {
 								background: #FF0000;
 							}
 			
-								ul.social li a.fa-github:hover {
-									background: #FF0000;
+								ul.social li a.fa-youtube:hover {
+									background: #ff4d4d;
 								}
 /* Icons */
 
