@@ -2216,39 +2216,39 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #fff url("../../images/pic01.jpg");
-		background-position: left left;
+		background: #154c79 url("../../images/Neuvotteluhuoneessa.jpg");
+		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: 2em 0 0 0;
 		font-size: 1.5em;
 		
 		
 	}
 
 		#banner header {
-			background-color: #154c79;
+			background-color: #fff;
 			display: inline-block;
-			padding: 2.5em 5em;
+			padding: 2.5em 2.5em;
 			border-radius: 5px;
 		}
 
 			#banner header h2 {
-				color: #fff;
+				color: rgb(0, 0, 0);
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
-				color: #fff;
+				color: rgb(0, 0, 0);
 				padding: 0;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.1em;
 			}
 
 /* Intro */
