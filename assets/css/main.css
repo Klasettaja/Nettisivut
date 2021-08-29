@@ -2233,7 +2233,7 @@ input, select, textarea {
 			background-color: #fff;
 			display: inline-block;
 			padding: 2.5em 2.5em;
-			border-radius: 5px;
+			border-radius: 10px;
 		}
 
 			#banner header h2 {
@@ -2442,9 +2442,9 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 8em 8em 8em 20%;
-				margin: 3em 0 0 0;
-				font-size: 1.1em;
+				padding: 8em 0;
+				margin: 2em 0 0 0;
+				font-size: 1.2em;
 			}
 
 		/* Intro */
@@ -2920,25 +2920,29 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 8em 0 8em 50%;
-				margin: 2em 0 0 0;
+				background-size: 0 0;
+				padding: 0 0;
+				margin: 0 0 0 0;
 				font-size: 0.7em;
 				
 			}
 
 				#banner header {
 					padding: 1.5em 1em 1.5em 1em;
-					display: block;
+					display: none; /*Laatikko piilotettu*/
 					border-radius: 0;
 				}
+				
 
 					#banner header h2 {
-						font-size: 1.5em;
+						font-size: 1.1em;
 						line-height: 1.5em;
 						margin: 0 0 0.25em 0;
-					}
+					} 
 
 					#banner header p {
+						padding: 0 0 0 0;
+						margin: 0 0 0 0;
 						font-size: 1.2em;
 					}
 
