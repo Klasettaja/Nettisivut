@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: klausiltanen.fi
+Token: 334b83f173339f3151c7a25fe8242db7b4ab9005365ec54660bdd870a64d7bc9
