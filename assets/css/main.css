@@ -209,6 +209,43 @@ input, select, textarea {
 
 		}
 
+/* Kuvien sijoittelu */
+
+	.verticalhorizontal {
+		text-align: center;
+		vertical-align: middle;
+		margin: 10%;
+	}	
+
+	@media screen and (max-width: 1680px) {
+		.verticalhorizontal {
+			text-align: center;
+			vertical-align: middle;
+			margin: 5%;
+		}	
+	}
+
+	@media screen and (max-width: 1280px) {
+		.verticalhorizontal {
+			text-align: center;
+			vertical-align: middle;
+		}	
+	}
+
+	@media screen and (max-width: 980px) {
+		.verticalhorizontal {
+			text-align: center;
+			vertical-align: middle;
+		}	
+	}
+
+	@media screen and (max-width: 736px) {
+		.verticalhorizontal {
+			text-align: center;
+			vertical-align: middle;
+		}	
+	}
+
 /* Row */
 
 	.row {
