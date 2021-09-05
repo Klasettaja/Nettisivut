@@ -214,14 +214,12 @@ input, select, textarea {
 	.verticalhorizontal {
 		text-align: center;
 		vertical-align: middle;
-		margin: 10%;
 	}	
 
 	@media screen and (max-width: 1680px) {
 		.verticalhorizontal {
 			text-align: center;
 			vertical-align: middle;
-			margin: 5%;
 		}	
 	}
 
