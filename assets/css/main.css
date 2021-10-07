@@ -2260,8 +2260,8 @@ input, select, textarea {
 
 	#banner {
 		background: #154c79 url("../../images/Neuvotteluhuoneessa.webp");
-		background-position: center center;
-		background-size: 100% 100%;
+		background-position: center;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
