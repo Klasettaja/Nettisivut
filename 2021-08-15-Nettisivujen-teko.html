@@ -72,30 +72,67 @@
 								<a href="#" class="image featured"><img src="images/2021-08-15 Nettisivujen teko/Koodit 1200 x 444.webp" alt="" /></a>
 								<header>
 									<h2>Nettisivujen luonti</h2>
-									<p>Julkaistu 19.08.2021</p>
+									<p>Julkaistu 19.08.2021, päivitetty 07.10.2021</p>
 								</header>
-								<p>
+									<p>
 									Tervetuloa blogiini! Tämä on ensimmäinen blogipostaukseni ja aloitan sen kertomalla, kuinka olen luonut nämä nettisivut 
-									hyödyntämällä Github-sivuja, Visual Studio Codea ja Githubia. Tämän blogipostauksen ohjeiden avulla myös sinä opit tekemään kustannustehokkaat staattiset nettisivut. 
-									Staattiset sivut toimivat käytännössä siten, että Github Pages -palvelun oletussivulta "username.github.io" sisältö ohjataan varaamallesi verkkosivulle. 
-									Github Pages- ja DNS-ohjauksien kanssa kannattaa olla kärsivällinen, sillä ensimmäisten tuntien aikana ohjausmuutoksista sivuston toiminta on epävakaata. Kannattaa siis odottaa ainakin vuorokausi ennen kuin epäilee, että on tehnyt jotain väärin. Mainittakoon kuitenkin vielä hyvänä puolena, että Github Pages -tarjoaa sivustollesi SSL-suojauksen (https), jonka avulla sivusto näyttää turvallisena vierailijoille.
-								</p>
-								<h3>Toimenpiteet</h3>
-								<p>
-									Aivan ensiksi sinun tulee varata verkkotunnus käyttöösi joltain palveluntarjoajalta, kuten esimerkiksi domainhotellista sekä hankkia mahdolliset lisäpalvelut, joilla voit muuttaa DNS-nimipalveluasetuksia. Staattisten nettisivujen ylläpito tapahtuu Github Pages -palvelun avulla, jonka <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">IP-osoitteet</a> sinun tulee lisätä DNS-asetuksiisi.
-								</p>
-								<p>
-									Nettisivujen kehittämistä varten sinun on hyvä ladata myös ohjelmistokehityspaketin sisältävä tekstieditori, kuten <a href="https://code.visualstudio.com/download">Visual Studio Code</a>. Visual Studio Code (VSC) on Microsoftin tarjoama ilmainen Git-versionhallintaa tukeva ohjelmointityökalu. 
-									Mikäli Git ei tule VSC-latauspaketin, tulee Git ladata erikseen <a href="https://git-scm.com/downloads">Gitin</a> nettisivuilta. Kun olet ladannut ohjelmistot, niin asenna VSC-sovellukseen vielä lisäosina (extensions) Git Extension Pack, gitignore sekä Live Server. Git-lisäosat auttavat jatkossa versiohallinan kanssa ja Live Serverin avulla nettisivujen kehitys on puolestaan nopeampaa.
-								</p>
-								<p>Ohjelmistojen latautuessa voit perustaa Github-tilin osoitteessa <a href="https://github.com/">https://github.com/</a>. Github-tilille voit täydentää haluamasi osoitetiedot, mutta oleellisinta on perustaa uusi repository nettisivujen kehittämistä varten. Nettisivuja kehitettäessä nettisivujen lähdekoodit sekä niihin liittyvät aineistot julkaistaan repositoryyn, jossa voidaan hallinnoida sivujen versiohallintaa.
-								Lisäksi staattisten nettisivujen ylläpidossa hyödynnettävä Github Pages -palvelu edellyttää, että sivuston lähdekoodit on julkaistu Githubiin, jotta nettisivut toimivat.</p>
-								<p>
-									Kun olet tehnyt kaikki edellä mainitut perustoimet, niin voit julkaista ensimmäisen versiosi index.html-tiedostostasi luomaasi Github-repositoryyn. Sinun tulee ensin avata uusi projektikansio Visual Studio Codessa ja tämän jälkeen vielä määritellä, että projektikansio kuuluu Git-versionhallinnan piiriin. Lopuksi voit suorittaa push-komennon eli työntää koodin Github-repositoryyn ja silmäillä tuloksia juuri luomillasi nettisivuilla.
-								</p>
+									hyödyntämällä Github-sivuja, Visual Studio Codea ja Githubia. Tämän blogipostauksen ohjeiden avulla myös sinä opit tekemään kustannustehokkaat staattiset nettisivut. </p>
+								<h3>Staattiset nettisivut</h3>
+									<p>
+									Staattisilla nettisivuilla tarkoitetaan perinteisesti nettisivuja, jotka on muodostettu HTML- ja CSS-merkintäkielien avulla, joiden käyttö on helppo omaksua, vaikka ei olisi aiempaa kokemusta ohjelmoinnista. 
+									Github Pages -palveluun perustuvat staattiset nettisivut toimivat käytännössä siten, että Github Pages -palvelun oletussivulta "<i>username.github.io</i>" sisältö ohjataan internetin nimipalvelujärjestelmän (DNS) avulla varaamallesi verkkosivulle. 
+									</p>
+								<h3>Verkkotunnuksen hankinta</h3>
+									<p>
+									Nettisivujen luonti aloitetaan varaamalla verkkotunnus käyttöösi joltain palveluntarjoajalta. Itse hankin klausiltanen.fi-verkkotunnuksen domainhotellista, josta hankin myös tarvittavat lisäpalvelut DNS-nimipalveluasetusten muuttamiseksi.
+									</p>
+								<h3>Kehitysympäristön perustaminen</h3>
+									<p>
+									Nettisivujen kehittämistä varten sinun tulee ladata ohjelmistokehityspaketin sisältävä tekstieditori, kuten <a href="https://code.visualstudio.com/download">Visual Studio Code</a>. Visual Studio Code (VSC) on Microsoftin tarjoama ilmainen Git-versionhallintaa tukeva ohjelmointityökalu. 
+									Mikäli Git ei tule VSC-latauspaketin mukana, tulee Git ladata erikseen <a href="https://git-scm.com/downloads">Gitin</a> nettisivuilta. Kun olet ladannut ohjelmistot, asenna VSC-sovellukseen vielä lisäosina (extensions) Git Extension Pack, gitignore sekä Live Server. Git-lisäosat auttavat jatkossa versiohallinnan kanssa ja Live Serverin avulla nettisivujen kehitys on puolestaan nopeampaa.
+									</p>
+								<h3>Github ja Github Pages -palvelu</h3>
+									<p>
+									Wikipediasta siteerattuna: "<i>GitHub on vuonna 2008 avattu verkkosivusto, joka tarjoaa paikan Git-versionhallintaa käyttäville ohjelmakehitysprojekteille. Git itsessään on komentoriviohjelma, jolle GitHub tarjoaa graafisen käyttöliittymän.</i>". 
+									Github Pages on puolestaan palvelu, joka tarjoaa staattisten nettisivujen ylläpidon tai "<i>houstauksen</i>" veloituksetta tarkoittaen sitä, että et tarvitse erillisistä palvelinta HTML- ja CSS-tiedostojen ylläpitämiseksi. Lisäksi Github Pages tarjoaa sivustollesi SSL-suojauksen (https), jonka avulla sivusto näyttäytyy turvallisena vierailijoille.
+									</p>
+									<p>
+									Github Pages -palvelun käyttöönotto edellyttää, että olet luonut Github-profiilin sekä repositoryksi kutsutun koodisäiliön, jonne nettisivujesi lähdekoodit lähetetään ja josta tiedot peilataan hankkimallesi verkkotunnukselle.
+									<div class="row">
+										<div class="verticalhorizontal">
+										<img src="images/2021-08-15 Nettisivujen teko/GithubPages.webp" width="800px" alt="GithubPages" />
+										</div>
+									</div>
+									</p>
+								<h3>Lähdekoodin lähetys Githubiin</h3>
+									<p>
+									Nettisivujen lähdekoodin muodostus aloitetaan muodostamalla index.html-tiedosto projektihakemistoon, josta se taltioidaan (<i>commit</i>) Gitin versiohistoriaan sekä lähetetään (<i>push</i>) eteenpäin Githubiin.
+
+									<br><br>
+									Koodin taltiointi Gitiin tapahtuu Source Control -välilehdeltä ja ensimmäisellä kerralla projektihakemistolle on määriteltävä Git-koodisäiliö, joka tapahtuu klikkaamalla valikosta "<i>Initialize Repository</i>".
+									Myös Githubia varten on määriteltävä Github-koodisäiliö, johon koodi lähetetään.
+									<div class="row">
+										<div class="verticalhorizontal">
+										<img src="images/2021-08-15 Nettisivujen teko/Nettisivuprojekti-sourcecontrol.webp" width="800px" alt="SourceControl" />
+										</div>
+									</div>
+									</p>
+								<h3>DNS-muutokset</h3>
+									<p>
+									Jotta Github Pages sisältö saadaan peilattua osoitteesta "<i>username.github.io</i>" hankimallesi verkkotunnukselle, tulee sinun lisätä Github Pages -palvelun <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">IP-osoitteet</a> DNS-tietoihisi.
+									Domainhotellissa tämä onnistuu lisäämällä DNS-hallintapaneeliin kautta hankimallesi verkkotunnukselle "<i>A-record</i>" tietueina Github Pages -palvelun IP-osoitteet.
+									</p>
+									<p>
+									DNS-muutoksien kanssa on syytä olla kärsivällinen, sillä ensimmäisten tuntien aikana ohjausmuutoksien tekemisestä sivuston toiminta on epävakaata. Kannattaa siis odottaa ainakin vuorokausi ennen kuin epäilee, että on tehnyt jotain väärin.
+									Kun DNS-muuutokset on tehty, verkkosivustollasi pitäisi näkyä vastaavat tiedot, kuin osoitteessa "<i>username.github.io</i>".
+									</p>
+								<h3>Lopputulos</h3>
+									<p>
+									Lopputuloksena Visual Studio Codessa editoimasi ja Githubiin julkaisemasi koodi pitäisi näkyä selkokielisenä nettisivuna osoitteessa "<i>username.github.io</i>" sekä Github Pages -palveluun linkittämälläsi verkkosivustolla.
+									</p>
 								<h3>Vinkkejä</h3>
 									<ul>
-										<li>HTML-merkintäkielen opiskelu onnistuu helpoiten sivustolla <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</li>
+										<li>HTML-merkintäkielen opiskelu onnistuu kätevästi sivustolla <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</li>
 										<li>Nettisivujen luonti kannattaa aloittaa luomalla sivusto jo jotakin valmista ilmaista sivupohjaa hyödyntämällä, mikäli haluaa saada nettisivut pystyyn nopeasti.</li>
 										<li>Nettisivujen kävijämäärien seuranta onnistuu kätevästi Google Analytics työkalulla, kun sivustolle on ensin tiputettu Google-seurantatunnus.</li>
 									  </ul>
