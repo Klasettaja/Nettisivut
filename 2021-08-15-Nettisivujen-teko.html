@@ -1,262 +1,220 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Nettisivujen luonti</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="wot-verification" content="742c92c16237aa446527"/>
+<html lang="fi">
+<head>
+<title>Nettisivujen luonti</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="wot-verification" content="742c92c16237aa446527"/>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="shortcut icon" href="images/K-favicon.png"/>
 
-		    <!-- Google Analytics seurantatagi -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5G20TMYQK"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-		
-			gtag('config', 'G-Y5G20TMYQK');
-			</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5G20TMYQK"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-Y5G20TMYQK');
+</script>
+</head>
 
-		<link rel="shortcut icon" href="images/K-favicon.png"/>
-		
-	</head>
-	<body class="2021-08-15-Nettisivujen-teko is-preload">
-		<div id="page-wrapper">
+<body class="2021-08-15-Nettisivujen-teko is-preload">
+<div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header">
+<!-- Header -->
+<section id="header">
 
-					<!-- Logo -->
-						<h1><a href="https://klausiltanen.fi/">Blogi</a></h1>
+<!-- Logo -->
+<h1><a href="https://klausiltanen.fi/">Blogi</a></h1>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="https://klausiltanen.fi/">Etusivu</a></li>
-								<li><a href="klaus.html">Klaus</a></li>
-								<li><a href="osaaminen.html">Osaaminen</a></li>
-								<!--<li>
-									<a href="#">Työt</a>
-									<ul>
-										<li><a href="#">Projekti 1</a></li>
-										<li><a href="#">Projekti 2</a></li>
-										<li><a href="#">Projekti 3</a></li>
-											<ul>
-										<li>
-											<a href="#">Projekti 4</a>
-											
-												<li><a href="#">Alasivun alasivu 1</a></li>
-												<li><a href="#">Alasivun alasivu 2</a></li>
-												<li><a href="#">Alasivun alasivu 3</a></li>
-												<li><a href="#">Alasivun alasivu 4</a></li>
-												<li><a href="#">Alasivun alasivu 5</a></li>
-											</ul>
-											
-										</li>
-										<li><a href="#">Aliprojekti 1</a></li>
-										
-									</ul>
-								</li>-->
-								<li class="current"><a href="blogi.html">Blogi</a></li>
-							</ul>
-						</nav>
-				</section>
+<!-- Nav -->
+<nav id="nav">
+<ul>
+	<li><a href="https://klausiltanen.fi/">Etusivu</a></li>
+	<li><a href="klaus.html">Klaus</a></li>
+	<li><a href="osaaminen.html">Osaaminen</a></li>
+	<li class="current"><a href="blogi.html">Blogi</a></li>
+</ul>
+</nav>
+</section>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
+<!-- Main -->
+<section id="main">
+<div class="container">
 
-						<!-- Content -->
-							<article class="box post">
-								<a href="#" class="image featured"><img src="images/2021-08-15 Nettisivujen teko/Koodit 1200 x 444.webp" alt="" /></a>
-								<header>
-									<h2>Nettisivujen luonti</h2>
-									<p>Julkaistu 19.08.2021, päivitetty 07.10.2021</p>
-								</header>
-									<p>
-									Tervetuloa blogiini! Tämä on ensimmäinen blogipostaukseni ja aloitan sen kertomalla, kuinka olen luonut nämä nettisivut 
-									hyödyntämällä Github-sivuja, Visual Studio Codea ja Githubia. Tämän blogipostauksen ohjeiden avulla myös sinä opit tekemään kustannustehokkaat staattiset nettisivut. </p>
-								
-								<section>
-								<h3>Staattiset nettisivut</h3>
-									<p>
-									Staattisilla nettisivuilla tarkoitetaan perinteisesti nettisivuja, jotka on muodostettu HTML- ja CSS-merkintäkielien avulla, joiden käyttö on helppo omaksua, vaikka ei olisi aiempaa kokemusta ohjelmoinnista. Staattinen sivu on käytännössä tiedosto palvelinkoneella ja se näkyy selaimella aina samanlaisena ja muuttuu vain, jos tiedostoa muokataan palvelimella.
-									Github Pages -palveluun perustuvat staattiset nettisivut toimivat käytännössä siten, että Github Pages -palvelun oletussivulta "<i>username.github.io</i>" sisältö ohjataan internetin nimipalvelujärjestelmän (DNS) avulla varaamallesi verkkosivulle. 
-									</p>
-								</section>
-								<section>
-								<h3>Verkkotunnuksen hankinta</h3>
-									<p>
-									Nettisivujen luonti aloitetaan rekisteröimällä verkkotunnus käyttöösi joltain palveluntarjoajalta. Itse hankin klausiltanen.fi-verkkotunnuksen domainhotellista, josta hankin myös tarvittavat lisäpalvelut DNS-nimipalveluasetusten muuttamiseksi. 
-									</p>
-								</section>
-								<h3>Kehitysympäristön perustaminen</h3>
-									<p>
-									Nettisivujen kehittämistä varten sinun tulee ladata ohjelmistokehityspaketin sisältävä tekstieditori, kuten <a href="https://code.visualstudio.com/download" target="_blank" style="text-decoration:none;">Visual Studio Code</a>. Visual Studio Code (VSC) on Microsoftin tarjoama ilmainen Git-versionhallintaa tukeva ohjelmointityökalu. 
-									Mikäli Git ei tule VSC-latauspaketin mukana, tulee Git ladata erikseen <a href="https://git-scm.com/downloads" target="_blank" style="text-decoration:none;">Gitin</a> nettisivuilta. Kun olet ladannut ohjelmistot, asenna VSC-sovellukseen vielä lisäosina (extensions) Git Extension Pack, gitignore sekä Live Server. Git-lisäosat auttavat jatkossa versiohallinnan kanssa ja Live Serverin avulla nettisivujen kehitys on puolestaan nopeampaa.
-									</p>
-								<h3>Github ja Github Pages -palvelu</h3>
-									<p>
-									Wikipediasta siteerattuna: "<i>GitHub on vuonna 2008 avattu verkkosivusto, joka tarjoaa paikan Git-versionhallintaa käyttäville ohjelmakehitysprojekteille. Git itsessään on komentoriviohjelma, jolle GitHub tarjoaa graafisen käyttöliittymän.</i>". 
-									Github Pages on puolestaan palvelu, joka tarjoaa staattisten nettisivujen ylläpidon tai "<i>houstauksen</i>" veloituksetta tarkoittaen sitä, että et tarvitse erillisistä palvelinta HTML- ja CSS-tiedostojen ylläpitämiseksi. Lisäksi Github Pages tarjoaa sivustollesi SSL-suojauksen (https), jonka avulla sivusto näyttäytyy turvallisena vierailijoille.
-									</p>
-									<p>
-									Github Pages -palvelun käyttöönotto edellyttää, että olet luonut Github-profiilin sekä repositoryksi kutsutun koodisäiliön, jonne nettisivujesi lähdekoodit lähetetään ja josta tiedot peilataan hankkimallesi verkkotunnukselle.
-									<!--
-									<div class="col-6 col-6-medium col-12-small">
-										<div class="verticalhorizontal">
-										<a href="images/2021-08-15 Nettisivujen teko/GithubPages.png"><img src="images/2021-08-15 Nettisivujen teko/GithubPages.webp" width="500px" alt="GithubPages" /></a>
-										</div>
-									</div>
-									-->
-									</p>
-								<h3>Lähdekoodin lähetys Githubiin</h3>
-									<p>
-									Nettisivujen lähdekoodin muodostus aloitetaan muodostamalla index.html-tiedosto projektihakemistoon, josta se taltioidaan (<i>commit</i>) Gitin versiohistoriaan sekä lähetetään (<i>push</i>) eteenpäin Githubiin.
+<!-- Content -->
+<article class="box post">
+<a href="#" class="image featured"><img src="images/2021-08-15 Nettisivujen teko/Koodit 1200 x 444.webp" alt="Koodit" /></a>
+<header>
+<h2>Nettisivujen luonti</h2>
+<p>Julkaistu 19.08.2021, päivitetty 07.10.2021</p>
+</header>
+<p>
+Tervetuloa blogiini! Tämä on ensimmäinen blogipostaukseni ja aloitan sen kertomalla, kuinka olen luonut nämä nettisivut hyödyntämällä Github-sivuja, Visual Studio Codea ja Githubia. 
+Tämän blogipostauksen ohjeiden avulla myös sinä opit tekemään kustannustehokkaat staattiset nettisivut.
+</p>
+<h3>Staattiset nettisivut</h3>
+<p>
+Staattisilla nettisivuilla tarkoitetaan perinteisesti nettisivuja, jotka on muodostettu HTML- ja CSS-merkintäkielien avulla, joiden käyttö on helppo omaksua, vaikka ei olisi aiempaa kokemusta ohjelmoinnista. Staattinen sivu on käytännössä tiedosto palvelinkoneella ja se näkyy selaimella aina samanlaisena ja muuttuu vain, jos tiedostoa muokataan palvelimella.
+Github Pages -palveluun perustuvat staattiset nettisivut toimivat käytännössä siten, että Github Pages -palvelun oletussivulta "<i>username.github.io</i>" sisältö ohjataan internetin nimipalvelujärjestelmän (DNS) avulla varaamallesi verkkosivulle. 
+</p>
+<h3>Verkkotunnuksen hankinta</h3>
+<p>
+Nettisivujen luonti aloitetaan rekisteröimällä verkkotunnus käyttöösi joltain palveluntarjoajalta. Itse hankin klausiltanen.fi-verkkotunnuksen domainhotellista, josta hankin myös tarvittavat lisäpalvelut DNS-nimipalveluasetusten muuttamiseksi. 
+</p>
+<h3>Kehitysympäristön perustaminen</h3>
+<p>
+Nettisivujen kehittämistä varten sinun tulee ladata ohjelmistokehityspaketin sisältävä tekstieditori, kuten <a href="https://code.visualstudio.com/download" target="_blank" style="text-decoration:none;">Visual Studio Code</a>. Visual Studio Code (VSC) on Microsoftin tarjoama ilmainen Git-versionhallintaa tukeva ohjelmointityökalu. 
+Mikäli Git ei tule VSC-latauspaketin mukana, tulee Git ladata erikseen <a href="https://git-scm.com/downloads" target="_blank" style="text-decoration:none;">Gitin</a> nettisivuilta. Kun olet ladannut ohjelmistot, asenna VSC-sovellukseen vielä lisäosina (extensions) Git Extension Pack, gitignore sekä Live Server. Git-lisäosat auttavat jatkossa versiohallinnan kanssa ja Live Serverin avulla nettisivujen kehitys on puolestaan nopeampaa.
+</p>
+<h3>Github ja Github Pages -palvelu</h3>
+<p>
+Wikipediasta siteerattuna: "<i>GitHub on vuonna 2008 avattu verkkosivusto, joka tarjoaa paikan Git-versionhallintaa käyttäville ohjelmakehitysprojekteille. Git itsessään on komentoriviohjelma, jolle GitHub tarjoaa graafisen käyttöliittymän.</i>". 
+Github Pages on puolestaan palvelu, joka tarjoaa staattisten nettisivujen ylläpidon tai "<i>houstauksen</i>" veloituksetta tarkoittaen sitä, että et tarvitse erillisistä palvelinta HTML- ja CSS-tiedostojen ylläpitämiseksi. Lisäksi Github Pages tarjoaa sivustollesi SSL-suojauksen (https), jonka avulla sivusto näyttäytyy turvallisena vierailijoille.
+</p>
+<p>
+Github Pages -palvelun käyttöönotto edellyttää, että olet luonut Github-profiilin sekä repositoryksi kutsutun koodisäiliön, jonne nettisivujesi lähdekoodit lähetetään ja josta tiedot peilataan hankkimallesi verkkotunnukselle.
+</p>
+<h3>Lähdekoodin lähetys Githubiin</h3>
+<p>
+Nettisivujen lähdekoodin muodostus aloitetaan muodostamalla index.html-tiedosto projektihakemistoon, josta se taltioidaan (<i>commit</i>) Gitin versiohistoriaan sekä lähetetään (<i>push</i>) eteenpäin Githubiin.
+</p>
+<p>
+Koodin taltiointi Gitiin tapahtuu Source Control -välilehdeltä ja ensimmäisellä kerralla projektihakemistolle on määriteltävä Git-koodisäiliö, joka tapahtuu klikkaamalla valikosta "<i>Initialize Repository</i>".
+Myös Githubia varten on määriteltävä Github-koodisäiliö, johon koodi lähetetään.
+</p>
+<h3>DNS-muutokset</h3>
+<p>
+Jotta Github Pages sisältö saadaan peilattua osoitteesta "<i>username.github.io</i>" hankimallesi verkkotunnukselle, tulee sinun lisätä Github Pages -palvelun <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site" target="_blank" style="text-decoration:none;">IP-osoitteet</a> DNS-tietoihisi.
+Domainhotellissa tämä onnistuu lisäämällä DNS-hallintapaneeliin kautta hankimallesi verkkotunnukselle "<i>A-record</i>" tietueina Github Pages -palvelun IP-osoitteet.
+</p>
+<p>
+DNS-muutoksien kanssa on syytä olla kärsivällinen, sillä ensimmäisten tuntien aikana ohjausmuutoksien tekemisestä sivuston toiminta on epävakaata. Kannattaa siis odottaa ainakin vuorokausi ennen kuin epäilee, että on tehnyt jotain väärin.
+Kun DNS-muuutokset on tehty, verkkosivustollasi pitäisi näkyä vastaavat tiedot, kuin osoitteessa "<i>username.github.io</i>".
+</p>
+<h3>Lopputulos</h3>
+<p>
+Lopputuloksena Visual Studio Codessa editoimasi ja Githubiin julkaisemasi koodi pitäisi näkyä selkokielisenä nettisivuna osoitteessa "<i>username.github.io</i>" sekä Github Pages -palveluun linkittämälläsi verkkosivustolla.
+</p>
+<h3>Vinkkejä</h3>
+<ul>
+	<li>HTML-merkintäkielen opiskelu onnistuu kätevästi sivustolla <a href="https://www.w3schools.com/" target="_blank" style="text-decoration:none;">https://www.w3schools.com/</a>.</li>
+	<li>Nettisivujen luonti kannattaa aloittaa luomalla sivusto jo jotakin valmista ilmaista sivupohjaa hyödyntämällä, mikäli haluaa saada nettisivut pystyyn nopeasti.</li>
+	<li>Nettisivut on mahdollista luoda myös ilman HTML- ja CSS-merkintäkielien opettelua erillisen www-sisällönhallintaohjelmiston, kuten WordPress-avulla. Sisällönhallintaohjelmiston hankinta lisää kuitenkin nettisivujen ylläpitokuluja.</li>
+	<li>Nettisivujen kävijämäärien seuranta onnistuu kätevästi Google Analytics työkalulla, kun sivustolle on ensin tiputettu Google-seurantatunnus.</li>
+</ul>
+<h3>Ylläpitokustannukset</h3>
+<p>
+Tämän sivuston ylläpitokustannukset muodostuvat domainhotellin kautta varatusta verkkotunnuksesta sekä DNS-nimipalvelut sisältävästä yhden tähden webhotellista. Sivuston ylläpitokustannukset ovat nämä elementit huomioiden noin 15 € vuodessa.
+</p>
+</article>
 
-									<br><br>
-									Koodin taltiointi Gitiin tapahtuu Source Control -välilehdeltä ja ensimmäisellä kerralla projektihakemistolle on määriteltävä Git-koodisäiliö, joka tapahtuu klikkaamalla valikosta "<i>Initialize Repository</i>".
-									Myös Githubia varten on määriteltävä Github-koodisäiliö, johon koodi lähetetään.
-									<!--
-									<div class="row">
-										<div class="verticalhorizontal">
-										<a href="images/2021-08-15 Nettisivujen teko/Nettisivuprojekti-sourcecontrol.png"><img src="images/2021-08-15 Nettisivujen teko/Nettisivuprojekti-sourcecontrol.webp" width="450px" alt="SourceControl" /></a>
-										</div>
-									</div>
-									-->
-									</p>
-								<h3>DNS-muutokset</h3>
-									<p>
-									Jotta Github Pages sisältö saadaan peilattua osoitteesta "<i>username.github.io</i>" hankimallesi verkkotunnukselle, tulee sinun lisätä Github Pages -palvelun <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site" target="_blank" style="text-decoration:none;">IP-osoitteet</a> DNS-tietoihisi.
-									Domainhotellissa tämä onnistuu lisäämällä DNS-hallintapaneeliin kautta hankimallesi verkkotunnukselle "<i>A-record</i>" tietueina Github Pages -palvelun IP-osoitteet.
-									</p>
-									<p>
-									DNS-muutoksien kanssa on syytä olla kärsivällinen, sillä ensimmäisten tuntien aikana ohjausmuutoksien tekemisestä sivuston toiminta on epävakaata. Kannattaa siis odottaa ainakin vuorokausi ennen kuin epäilee, että on tehnyt jotain väärin.
-									Kun DNS-muuutokset on tehty, verkkosivustollasi pitäisi näkyä vastaavat tiedot, kuin osoitteessa "<i>username.github.io</i>".
-									</p>
-								<h3>Lopputulos</h3>
-									<p>
-									Lopputuloksena Visual Studio Codessa editoimasi ja Githubiin julkaisemasi koodi pitäisi näkyä selkokielisenä nettisivuna osoitteessa "<i>username.github.io</i>" sekä Github Pages -palveluun linkittämälläsi verkkosivustolla.
-									</p>
-								<h3>Vinkkejä</h3>
-									<ul>
-										<li>HTML-merkintäkielen opiskelu onnistuu kätevästi sivustolla <a href="https://www.w3schools.com/" target="_blank" style="text-decoration:none;">https://www.w3schools.com/</a>.</li>
-										<li>Nettisivujen luonti kannattaa aloittaa luomalla sivusto jo jotakin valmista ilmaista sivupohjaa hyödyntämällä, mikäli haluaa saada nettisivut pystyyn nopeasti.</li>
-										<li>Nettisivut on mahdollista luoda myös ilman HTML- ja CSS-merkintäkielien opettelua erillisen www-sisällönhallintaohjelmiston, kuten WordPress-avulla. Sisällönhallintaohjelmiston hankinta lisää kuitenkin nettisivujen ylläpitokuluja.</li>
-										<li>Nettisivujen kävijämäärien seuranta onnistuu kätevästi Google Analytics työkalulla, kun sivustolle on ensin tiputettu Google-seurantatunnus.</li>
-									  </ul>
-								<h3>Ylläpitokustannukset</h3>
-								<p>
-									Tämän sivuston ylläpitokustannukset muodostuvat domainhotellin kautta varatusta verkkotunnuksesta sekä DNS-nimipalvelut sisältävästä yhden tähden webhotellista. Sivuston ylläpitokustannukset ovat nämä elementit huomioiden noin 15 € vuodessa.
-								</p>
-							</article>
-					</div>
-				</section>
+</div>
+</section>
 				
-			<!-- Footer -->
-			<section id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-8 col-12-medium">
-							<section>
-								<header>
-									<h2>Viimeisimmät blogipostaukset</h2>
-								</header>
-								<ul class="dates">
-									<li>
-										<span class="date">Elo<strong>15</strong></span>
-										<h3><a href="2021-08-15-Nettisivujen-teko.html">Nettisivujen luonti</a></h3>
-										<p>Nettisivujen muodostus Github Pages avulla.</p>
-									</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section>
-								<header>
-									<h2>Miksi nämä sivut ovat olemassa?</h2>
-								</header>
-								<!--<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>-->
-								<p>
-									Olen luonut <strong>nämä</strong> nettisivut esitelläkseni osaamistani ja ajatuksiani.
-								</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="2021-08-15-Nettisivujen-teko.html" class="button">Lue lisää</a></li>
-									</ul>
-								</footer>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section>
-								<header>
-									<h2>Minusta maailmalla</h2>
-								</header>
-								<ul class="divided">
-									<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:6843466689200447488/">2021-09-13 Työntekijäesittely: Klaus Iltanen</a></li>
-									<li><a href="https://readysolutions.fi/asiakkaat/leppakoski/">2020-08-25 Readysolutions.fi, Leppäkoski kehittää ketterästi liiketoimintatiedon hallinta-alustaansa</a></li>
-									<li><a href="https://www.datatiede.fi/opinnaytetyot/">2019-05-04 Datatiede.fi, opinnäytetyöt – BI -ratkaisun käyttöönotto keskisuuressa yrityksessä</a></li>
-									<li><a href="https://leppakoski.fi/millainen-on-projekti-insinoorin-tyopaiva/">2018-07-26 Millainen on projekti-insinöörin työpäivä?</a></li>
-									<li><a href="https://www.tableau.com/solutions/customer/leppakosken-sahko-reduces-reporting-time-weeks-hours-tableau">2016-09-09 Tableau.com, Finnish energy company, Leppäkosken Sähkö reduces reporting time from weeks to hours</a></li>
-									<li><a href="https://web.archive.org/web/20190207160505/https://www.solutive.fi/tableau/asiakascase-leppakosken-sahko/">2016-09-07 Leppäkosken Sähkö kutisti raportointiin kuluvan ajan viikoista tunteihin Tableaun avulla</a></li>										
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section>
-								<header>
-									<h2>Lukusuositukset</h2>
-								</header>
-								<ul class="divided">
-									<li><a href="https://waitbutwhy.com/">Wait but why -blogi</a></li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section>
-								<header>
-									<h2>Sosiaaliset mediat</h2>
-								</header>
-								<ul class="social">
-									<li><a class="icon brands fa-linkedin-in" href="https://fi.linkedin.com/in/klaus-iltanen"><span class="label">LinkedIn</span></a></li>
-									<li><a class="icon brands fa-github" href="https://github.com/Klasettaja"><span class="label">Github</span></a></li>
-									<li><a class="icon brands fa-youtube" href="https://www.youtube.com/channel/UCMAUIuHAI3oUN0zyTPkG-bQ"><span class="label">Youtube</span></a></li>
-									<li><a class="icon brands fa-facebook-f" href="https://www.facebook.com/klaus.Iltanen"><span class="label">Facebook</span></a></li>
-									<li><a class="icon brands fa-instagram" href="https://www.instagram.com/klasettaja/"><span class="label">Instagram</span></a></li>
-									<!--<li><a class="icon brands fa-twitter" href="https://twitter.com/klausiltanen"><span class="label">Twitter</span></a></li>-->
-								</ul>
-								<ul class="contact">
-									<li>
-										<h3>Sähköposti</h3>
-										<p> <a href="mailto:klaus.iltanen&#64;gmail&#46;&#99;&#111;&#109;" title="En ole kirjannut sähköpostiosoitettani tähän, jotta se ei joudu verkkoharavoinnin kautta roskapostilistoille. &#010;Löydät sähköpostiosoitteeni myös ladattavasta ansioluettelostani.">Sähköpostini on muotoa etunimi.sukunimi@gmail.com</a></p>
-									</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-12">
+<!-- Footer -->
+<section id="footer">
+<div class="container">
+<div class="row">
 
-							<!-- Copyright -->
-								<div id="copyright">
-									<ul class="links">
-										<li>&copy; Klaus Iltanen</li><li><a href="tietosuojaseloste.html">Tietosuojaseloste</a></li>
-									</ul>
-								</div>
+<div class="col-8 col-12-medium">
+<section>
+<header>
+<h2>Viimeisimmät blogipostaukset</h2>
+</header>
+<ul class="dates">
+	<li>
+		<span class="date">Elo<strong>15</strong></span>
+		<h3><a href="2021-08-15-Nettisivujen-teko.html">Nettisivujen luonti</a></h3>
+		<p>Nettisivujen muodostus Github Pages avulla.</p>
+	</li>
+</ul>
+</section>
+</div>
 
-						</div>
-					</div>
-				</div>
-			</section>
+<div class="col-4 col-12-medium">
+<section>
+<header>
+<h2>Miksi nämä sivut ovat olemassa?</h2>
+</header>
+<p>Olen luonut <strong>nämä</strong> nettisivut esitelläkseni osaamistani ja ajatuksiani.</p>
+<footer>
+<ul class="actions">
+	<li><a href="2021-08-15-Nettisivujen-teko.html" class="button">Lue lisää</a></li>
+</ul>
+</footer>
+</section>
+</div>
 
-	</div>
+<div class="col-4 col-6-medium col-12-small">
+<section>
+<header>
+<h2>Minusta maailmalla</h2>
+</header>
+<ul class="divided">
+	<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:6843466689200447488/">2021-09-13 Työntekijäesittely: Klaus Iltanen</a></li>
+	<li><a href="https://readysolutions.fi/asiakkaat/leppakoski/">2020-08-25 Readysolutions.fi, Leppäkoski kehittää ketterästi liiketoimintatiedon hallinta-alustaansa</a></li>
+	<li><a href="https://www.datatiede.fi/opinnaytetyot/">2019-05-04 Datatiede.fi, opinnäytetyöt – BI -ratkaisun käyttöönotto keskisuuressa yrityksessä</a></li>
+	<li><a href="https://leppakoski.fi/millainen-on-projekti-insinoorin-tyopaiva/">2018-07-26 Millainen on projekti-insinöörin työpäivä?</a></li>
+	<li><a href="https://www.tableau.com/solutions/customer/leppakosken-sahko-reduces-reporting-time-weeks-hours-tableau">2016-09-09 Tableau.com, Finnish energy company, Leppäkosken Sähkö reduces reporting time from weeks to hours</a></li>
+	<li><a href="https://web.archive.org/web/20190207160505/https://www.solutive.fi/tableau/asiakascase-leppakosken-sahko/">2016-09-07 Leppäkosken Sähkö kutisti raportointiin kuluvan ajan viikoista tunteihin Tableaun avulla</a></li>										
+</ul>
+</section>
+</div>
 
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+<div class="col-4 col-6-medium col-12-small">
+<section>
+<header>
+<h2>Lukusuositukset</h2>
+</header>
+<ul class="divided">
+	<li><a href="https://waitbutwhy.com/">Wait but why -blogi</a></li>
+</ul>
+</section>
+</div>
+
+<div class="col-4 col-12-medium">
+<section>
+<header>
+<h2>Sosiaaliset mediat</h2>
+</header>
+<ul class="social">
+	<li><a class="icon brands fa-linkedin-in" href="https://fi.linkedin.com/in/klaus-iltanen"><span class="label">LinkedIn</span></a></li>
+	<li><a class="icon brands fa-github" href="https://github.com/Klasettaja"><span class="label">Github</span></a></li>
+	<li><a class="icon brands fa-youtube" href="https://www.youtube.com/channel/UCMAUIuHAI3oUN0zyTPkG-bQ"><span class="label">Youtube</span></a></li>
+	<li><a class="icon brands fa-facebook-f" href="https://www.facebook.com/klaus.Iltanen"><span class="label">Facebook</span></a></li>
+	<li><a class="icon brands fa-instagram" href="https://www.instagram.com/klasettaja/"><span class="label">Instagram</span></a></li>
+</ul>
+<ul class="contact">
+	<li>
+		<h3>Sähköposti</h3>
+		<p> <a href="mailto:klaus.iltanen&#64;gmail&#46;&#99;&#111;&#109;" title="En ole kirjannut sähköpostiosoitettani tähän, jotta se ei joudu verkkoharavoinnin kautta roskapostilistoille. &#010;Löydät sähköpostiosoitteeni myös ladattavasta ansioluettelostani.">Sähköpostini on muotoa etunimi.sukunimi@gmail.com</a></p>
+	</li>
+</ul>
+</section>
+</div>
+
+<div class="col-12">
+<!-- Copyright -->
+<div id="copyright">
+<ul class="links">
+	<li>&copy; Klaus Iltanen</li><li><a href="tietosuojaseloste.html">Tietosuojaseloste</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
