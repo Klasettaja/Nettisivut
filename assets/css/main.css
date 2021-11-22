@@ -2162,10 +2162,12 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		position: relative;
+		position: sticky; /*Sticky-määrityksellä ylävalikko pysyy skrollatessa mukana*/
+		top: 0px;
+		z-index: 5;
 		background: #154c79;
 		border-bottom: solid 0px #154c79; /*Viiva*/
-		padding: 2em 0 2em 0; /*Sivuston ylälaidon marginaalit*/
+		padding: 1em 0 1em 0; /*Sivuston ylälaidon marginaalit*/
 		text-align: center;
 	}
 
@@ -2180,7 +2182,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		margin: 2.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0; 
 	}
 
 		#nav > ul {
@@ -2280,7 +2282,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 2em 0 0 0;
+		margin: 0 0 0 0;
 		font-size: 1.5em;
 		
 		
@@ -2494,14 +2496,14 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4em 0 3em 0;
+				padding: 1em 0 1em 0;
 			}
 
 		/* Banner */
 
 			#banner {
 				padding: 8em 0;
-				margin: 2em 0 0 0;
+				margin: 0 0 0 0;
 				font-size: 1.2em;
 			}
 
