@@ -11,7 +11,7 @@ function initPayPalButton() {
 
 	  createOrder: function(data, actions) {
 		return actions.order.create({
-		  purchase_units: [{"description":"Laskuri v.1.2","amount":{"currency_code":"EUR","value":12.4,"breakdown":{"item_total":{"currency_code":"EUR","value":10},"shipping":{"currency_code":"EUR","value":0},"tax_total":{"currency_code":"EUR","value":2.4}}}}]
+		  purchase_units: [{"description":"Laskuri","amount":{"currency_code":"EUR","value":9.99,"breakdown":{"item_total":{"currency_code":"EUR","value":8.06},"shipping":{"currency_code":"EUR","value":0},"tax_total":{"currency_code":"EUR","value":1.93}}}}]
 		});
 	  },
 

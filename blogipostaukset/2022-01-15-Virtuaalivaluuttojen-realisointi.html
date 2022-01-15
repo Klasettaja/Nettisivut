@@ -55,13 +55,14 @@ gtag('config', 'G-Y5G20TMYQK');
 
 <!-- Content -->
 <article class="box post">
-<a href="#" class="image featured"><img src="../images/2021-08-15 Nettisivujen teko/Koodit 1200 x 444.webp" alt="Koodit" /></a>
+<a href="#" class="image featured"><img src="../images/2022-01-15/Virtuaalivaluuttojen_verotuslaskelmat_kansikuva_15.01.2022.jpg" alt="Koodit" /></a>
 <header>
 <h2>Virtuaalivaluuttojen realisointi ja hankintamenomenetelmät</h2>
-<p>Julkaistu XX.01.2022</p>
+<p>Julkaistu 15.01.2022</p>
 </header>
 <p>
-Tämän blogipostauksen tarkoitus on selkeyttää virtuaalivaluutoilla tehtyjen myyntivoittojen ja -tappioiden ilmoittamista verottajalle sekä tuoda esille kuinka suuri taloudellinen vaikutus hankintamenomenetelmän valinnalla voi olla verovelvollisen kannalta. Samalla tämä blogipostaus voi toimia muistijälkenä itselle ja lukijoille tulevia veroilmoituksia varten.
+Tämän blogipostauksen tarkoitus on selkeyttää virtuaalivaluutoilla tehtyjen myyntivoittojen ja -tappioiden laskemista sekä tuoda esille kuinka suuri taloudellinen vaikutus hankintamenomenetelmän valinnalla voi olla verovelvollisen kannalta. Samalla tämä blogipostaus voi toimia muistijälkenä itselle ja lukijoille tulevia veroilmoituksia varten. 
+Huomioithan, että tämä blogipostaus saattaa sisältää virheitä, joten käytä lähdemateriaalina aina alkuperäisiä virallisia lähteitä laskiessasi myyntivoittoja- ja tappiota sekä ilmoittaessasi niitä eteenpäin verottajalle.
 </p>
 <h3>Virtuaalivaluuttojen realisointi</h3>
 <p>
@@ -80,17 +81,33 @@ Lisänyanssin hankintaolettamaan luo virtuaalivaluuttojen omistamisaika. Mikäli
 Ohjeen mukaan vaihto-omaisuuden hankintamenon suuruus määritetään, ellei verovelvollinen muuta näytä FIFO-periaatteen mukaisesti. Vaihtoehtona on ilmoittaa yksilöllisesti määritetty todellinen hankintameno. Verottaja on laatinut virtuaalivaluuttatapahtumien mahdollisen arvonnousun laskemiseen virtualivaluuttojen <a href="https://www.vero.fi/tietoa-verohallinnosta/yhteystiedot-ja-asiointi/verohallinnon_laskuri/fifo-laskuri/" target="_blank">FIFO-laskurin</a>. Käytännössä FIFO-periaatteen (First In - First Out) mukaisesti voittoa tai tappiota laskettaessa virtuaalivaluutat katsotaan käytetyksi siinä järjestyksessä kuin ne on hankittu.
 </p>
 <p>
-Verottajan sivuilta ladattavalla FIFO-laskurilla on kätevä laskea virtuaalivaluuttatapahtumien perusteella mahdollinen arvonnousu FIFO-periaatteen mukaisesti, mutta laskurin versiolla 1.1 ei ole mahdollista laskea verrokiksi todellisia hankintamenoja. Siispä olen jalostanut laskurista version, joka laskee verrokiksi myös todelliset hankintamenot sekä avaa laskurin taustalla toimivaa logiikkaa. Laadin laskuriin laskentafunktiot ns. tyhjältä pöydältä, koska niitä ei juurikaan löytynyt verottajan laskurista tai ne oli piilotettu salasanalla suojatun makron taakse.
+Verottajan sivuilta ladattavalla FIFO-laskurilla on kätevä laskea virtuaalivaluuttatapahtumien perusteella mahdollinen arvonnousu FIFO-periaatteen mukaisesti, mutta laskurin versiolla 1.1 ei ole mahdollista laskea verrokiksi todellisia hankintamenoja. Siispä olen laatinut oman versioni laskurista, joka laskee verrokiksi myös todelliset hankintamenot sekä avaa laskurin taustalla toimivaa logiikkaa. Laadin laskuriin laskentafunktiot ns. tyhjältä pöydältä, koska niitä ei juurikaan löytynyt verottajan laskurista tai ne oli piilotettu salasanalla suojatun makron taakse.
 </p>
-<h3>Laskurin esittely ja erot hankintamenomenetelmissä</h3>
+<h3>Laskuri ja erot hankintamenomenetelmissä</h3>
 <p>
+Laatimani laskuri eroaa verottajan laskurista siten, että olen lisännyt taulukkoon useita lisäsarakkeita, jotka toivottavasti selkeyttävät solukohtaisten viittauksien ja funktioiden avulla kuinka todellinen hankintameno tai hankintameno-olettaman mukainen hankintameno lasketaan.
 Taulukko sisältää useita yleishyödyllisiä laskentakaavoja virtuaalivaluuttojen myyntivoittojen ja -tappioiden laskemiseksi ymmärrettävästi välivaiheineen.
 </p>
-<h3>Loppupohdintoja</h3>
-<ul>
-	<li>Onko olemassa jokin saturaatiopiste, jolloin toinen menetelmä muodostuu kannattavammaksi?</li>
-	<li>Saako verottaja jatkossa tiedot suoraan pörsseistä?</li>
-</ul>
+<div class="container">
+<div class="row">
+<div class="col-sm">
+<a href="../images/2022-01-15/Virtuaalivaluuttojen_verotuslaskelmat_15.01.2022.jpg">
+<figure>
+	<img src="../images/2022-01-15/Virtuaalivaluuttojen_verotuslaskelmat_15.01.2022.jpg" style="width: 100%;">
+	<figcaption style="text-align:center;">Kuva laskurista</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<p>
+Laskurin esimerkin perusteella on esimerkiksi tulkittavissa, että hankintameno-olettamaa käyttämällä verovelvollinen hyötyy laskentamenetelmien erotuksen verran, joka esimerkin tapauksessa on 22 305,86 € - 20 764,94 € = <b>1 540,92 €</b>.
+Oman tulkintani mukaan hankintameno-olettamaa kannattaa siis hyödyntää silloin, kun todelliset hankintamenot ovat pienemmät, kuin hankintameno-olettaman mukainen hankintameno.
+<p>
+<p>
+Kiinnostuitko laskurista? Voit hankkia sen itsellesi alla esitettyjen maksutapavaihtoehtojen avulla.
+<p>
+		
 <div id="smart-button-container">
 	<div style="text-align: center;">
 	  <div id="paypal-button-container"></div>
@@ -116,8 +133,8 @@ Taulukko sisältää useita yleishyödyllisiä laskentakaavoja virtuaalivaluutto
 </header>
 <ul class="dates">
 	<li>
-		<span class="date">Tam<strong>20</strong></span>
-		<h3><a href="../blogipostaukset/2022-01-XX-Virtuaalivaluuttojen-realisointi.html">Virtuaalivaluutat ja hankintamenomenetelmät</a></h3>
+		<span class="date">Tam<strong>15</strong></span>
+		<h3><a href="../blogipostaukset/2022-01-15-Virtuaalivaluuttojen-realisointi.html">Virtuaalivaluutat ja hankintamenomenetelmät</a></h3>
 		<p>Asiaa virtuaalivaluuttojen myyntivoittojen realisoimisesta.</p>
 	</li>
 	<li>
