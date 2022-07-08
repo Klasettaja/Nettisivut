@@ -1731,6 +1731,31 @@ input, select, textarea {
 			padding: 0.75em 1.5em 0.75em 1.5em;
 		}
 
+/* Tooltips */
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+	
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+	
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	}
+	
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+	
 /* Image */
 
 	.image {
@@ -2179,11 +2204,21 @@ input, select, textarea {
 			line-height: 1;
 		}
 
-/* Logo */
+/*Logo ja animaatio*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 #logo {
 	float: left;
 	padding-left: 1em;
+	animation-name: fadeIn;
+	animation-duration: 7s;
 }
 
 /* Nav */
@@ -2293,8 +2328,6 @@ input, select, textarea {
 		padding: 7.5em 0;
 		margin: 0 0 0 0;
 		font-size: 1.5em;
-		
-		
 	}
 
 		#banner header {
